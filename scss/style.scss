@@ -1,0 +1,456 @@
+@import "normalize.scss";
+@import "slick";
+@import "layout.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+$body-font: 'Raleway', sans-serif;
+$text-color: #3f3e41;
+$secondary-color: #fd5c08;
+
+body{
+	font: 400 19px/1.48 $body-font;
+	color: $text-color;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	background-color:  #545357;
+	border: none;
+	color: #FFF;
+	text-decoration: none;
+	padding: 0 30px;
+
+
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	color: $secondary-color;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-header {
+	background: #FFF;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 10;
+
+}
+
+.ba-logo-container {
+	padding-top: 23px;
+}
+
+.ba-logo {
+	display: inline-block;
+
+}
+
+.ba-nav {
+
+}
+
+.ba-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+
+	li {
+		display: flex;
+		width: 25%;
+	}
+
+	&__element {
+		text-decoration: none;
+		color: $text-color;
+		text-align: center;
+		font-size: 13px;
+		font-weight: 700;
+		display: block;
+		padding: 18px 0 24px;
+		min-width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+
+		&:hover {
+			background-color:  $secondary-color;
+			color: #FFF;
+		}
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+// ba-experience section
+
+.ba-experience {
+	background: #e94a97 url('../img/bg1.jpg') no-repeat 50%;
+	background-size: cover;
+	padding: 489px 0 160px;
+
+	&__body {
+		max-width: 670px;
+		color: #fff;
+	}
+
+	&__subtitle {
+		font-size: 38px;
+		margin: 0 0 5px;
+		line-height: 1;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.75)
+	}
+
+	&__title {
+		font-size: 100px;
+		font-weight: 900;
+		margin: 0 0 9px;
+		line-height: 0.9;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.75)
+	}
+
+	&__info {
+		margin: 0;
+		letter-spacing: -0.04em;
+	}
+}
+
+// ba-destinations section
+
+.ba-destinations {
+	background: #FFF url(../img/bg2.png) no-repeat 50%;
+	background-size: cover;
+	padding: 120px 0 114px;
+
+	&__title {
+		color: $secondary-color;
+		font-size: 80px;
+		font-weight: 800;
+		line-height: 0.8;
+		margin: 0;
+	}
+
+	&__subtitle {
+		font-size: 34px;
+		margin: 0;
+	}
+
+	&__info {
+		margin: 0;
+	}
+}
+
+.ba-trips {
+	margin: 102px 0 40px;
+}
+
+.ba-trip {
+	float: left;
+	position: relative;
+	display: block;
+	cursor: pointer;
+
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	img {
+		display: block;
+		position: relative;
+
+	}
+
+	&__price {
+		position: absolute;
+		left: 30px;
+		top: 40px;
+		z-index: 2;
+		max-width: 105%;
+
+	}
+}
+
+.ba-overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 36%;
+	opacity: 0;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 32px 80px 0 30px;
+}
+
+.ba-country {
+	color: $secondary-color;
+	margin: 0;
+	font-size: 23px;
+
+	&__text {
+	font-size: 34px;
+	font-weight: 700;
+	color: $text-color;
+	margin: 0;
+	line-height: 1;
+	}
+
+	&__link {
+		font-size: 13px;
+		color: $text-color;
+		margin-top: 30px;
+
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+}
+
+
+
+.ba-price__start {
+	display: block;
+	color: #FFF;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.ba-euro {
+	color: $secondary-color;
+	font-weight: 800;
+	font-size: 30px;
+}
+
+.ba-price {
+	font-size: 42px;
+	font-weight: 800;
+	color: #FFF;
+	line-height: 1;
+}
+
+.ba-trip:hover .ba-overlay{
+opacity: 1;
+transition: opacity .6s ease-in;
+}
+
+.ba-trip:hover .ba-trip__price{
+	opacity: 0;
+}
+
+.ba-play {
+	color: $secondary-color;
+	margin-right: 10px;
+	font-size: 12px;
+}
+
+.ba-button--destinations {
+	float: right;
+	margin-right: 19px;
+	padding: 0 26px
+}
+
+
+// ba-best-offers section
+
+.ba-best-offers {
+	background: #c46d39 url('../img/bg3.jpg') 50% no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 73px 0 170px;
+	position: relative;
+}
+
+.ba-best-offers__title {
+	color: #FFF;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.ba-slide__subtitle {
+	font-size: 38px;
+	margin: 28px 0 5px;
+	line-height: 1;
+	color: #FFF;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.75)
+}
+
+.ba-slide__title {
+	font-size: 100px;
+	font-weight: 900;
+	margin: 0 0 9px;
+	line-height: 0.9;
+	color: #FFF;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.75)
+}
+
+.ba-slide__info {
+	color: #FFF;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.75)
+}
+
+.ba-slide__body {
+	max-width: 930px;
+	margin: 0 auto;
+}
+
+.ba-kenya {
+	max-width: 700px;
+	margin: 105px auto 60px;
+	text-align: left;
+	position: relative;
+
+
+	&__price {
+		float: left;
+		max-width: 200px;
+		background-color:  #3f3e41;
+		padding: 90px 45px 25px 20px;
+
+	}
+
+	&__info {
+		float: left;
+		max-width: 500px;
+		background-color:  rgba(255, 255, 255, 0.9);
+		padding: 30px 100px 47px 30px;
+	}
+}
+
+.ba-kenya__price-start {
+	color: #FFF;
+}
+
+.ba-euro--kenya {
+	color: #fff;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 1;
+}
+
+.ba-kenya__price-val {
+	color: $secondary-color;
+	font-size: 60px;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.ba-kenya__info-title {
+	color: $secondary-color;
+	margin: 0 0 20px;
+	line-height: 1;
+	font-weight: 400;
+}
+
+.ba-kenya__info-text {
+	margin: 0 0 10px;
+	font-size: 16px;
+}
+
+.ba-kenya__info-text-bold {
+	font-weight: 700;
+}
+
+.ba-country__link {
+	text-decoration: none;
+}
+
+.ba-africa {
+	position: absolute;
+	right: -130px;
+	top: -50px;
+}
+.ba-button--kenya {
+	position: absolute;
+	bottom: -20px;
+	right: 40px;
+	z-index: 2;
+
+}
+
+.ba-slider-prev {
+	position: absolute;
+	bottom: 80px;
+	right: 145px;
+	padding: 0 20px;
+
+	&:hover {
+		background-color: $secondary-color;
+		color: #FFF;
+
+	}
+}
+
+.ba-slider-next {
+	position: absolute;
+	bottom: 80px;
+	right: 195px;
+	padding: 0 20px;
+	color: #FFF;
+
+	&:hover {
+		background-color: $secondary-color;
+		color: #FFF;
+
+	}
+}
+
+
+
+
+.ba-map {
+	height: 600px;
+}
