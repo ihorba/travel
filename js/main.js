@@ -7,9 +7,57 @@
 		arrows: true,
 		prevArrow: '.ba-slider-prev',
 		nextArrow: '.ba-slider-next',
-		slidesToShow: 1,
-		slidesToScroll:1
+		slidesToShow: 1
 	});
+
+	var lastMinSlider = $('.ba-last-min-slider');
+	lastMinSlider.slick({
+		slide: '.ba-last-min-slide',
+		arrows: true,
+		prevArrow: '.ba-slider-prev--last-min',
+		nextArrow: '.ba-slider-next--last-min',
+		slidesToShow: 1,
+		fade: true
+
+	});
+
+	// Select all links with hashes
+	$('a[href*="#"]')
+	  // Remove links that don't actually link to anything
+	  .not('[href="#"]')
+	  .not('[href="#0"]')
+	  .click(function(event) {
+	    // On-page links
+	    if (
+	      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+	      &&
+	      location.hostname == this.hostname
+	    ) {
+	      // Figure out element to scroll to
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	      // Does a scroll target exist?
+	      if (target.length) {
+	        // Only prevent default if animation is actually gonna happen
+	        event.preventDefault();
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 800, function() {
+	          // Callback after animation
+	          // Must change focus!
+	          var $target = $(target);
+	          $target.focus();
+	          if ($target.is(":focus")) { // Checking if the target was focused
+	            return false;
+	          } else {
+	            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+	            $target.focus(); // Set focus again
+	          };
+	        });
+	      }
+	    }
+	  });
+
 
 
 	function initMap() {
