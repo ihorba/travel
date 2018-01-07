@@ -748,14 +748,15 @@ textarea {
 	font-weight: 500;
 	font-size: 14px;
 	background-color: $secondary-color;
-	padding: 20px 34px;
+	padding: 25px 34px;
 	line-height: 1;
 	&:hover {
 		background-color: $text-color;
 	}
 
 	@media (max-width: $bp-medium) {
-		padding: 20px 10px;
+		padding: 25px 5px;
+		font-size: 10px;
 	}
 }
 
@@ -780,6 +781,7 @@ textarea {
 
 	@media (max-width: $bp-medium) {
 		margin-right: 5px;
+		font-size: 10px;
 	}
 }
 

@@ -1186,13 +1186,14 @@ select {
   font-weight: 500;
   font-size: 14px;
   background-color: #fd5c08;
-  padding: 20px 34px;
+  padding: 25px 34px;
   line-height: 1; }
   .ba-last-minute__ind:hover {
     background-color: #3f3e41; }
   @media (max-width: 768px) {
     .ba-last-minute__ind {
-      padding: 20px 10px; } }
+      padding: 25px 5px;
+      font-size: 10px; } }
 
 .ba-last-minute__right-side {
   text-align: right; }
@@ -1212,7 +1213,8 @@ select {
   letter-spacing: -0.05em; }
   @media (max-width: 768px) {
     .ba-country__link--last-min {
-      margin-right: 5px; } }
+      margin-right: 5px;
+      font-size: 10px; } }
 
 .ba-footer {
   background-color: #fd5c08;
