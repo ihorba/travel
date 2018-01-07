@@ -657,6 +657,14 @@ select {
     -ms-flex-pack: justify;
     justify-content: space-between; }
 
+.ba-container--header {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px; }
+  @media (max-width: 480px) {
+    .ba-container--header {
+      padding: 0; } }
+
 .ba-logo-container {
   padding-top: 23px;
   width: 50%; }
@@ -761,7 +769,7 @@ select {
   padding: 120px 0 114px; }
   @media (max-width: 1200px) {
     .ba-destinations {
-      padding: 60px 0; } }
+      padding: 40px 0; } }
   .ba-destinations__title {
     color: #fd5c08;
     font-size: 80px;
@@ -773,7 +781,8 @@ select {
         font-size: 50px; } }
   .ba-destinations__subtitle {
     font-size: 34px;
-    margin: 0; }
+    margin: 0;
+    line-height: 1.2; }
   .ba-destinations__info {
     margin: 0; }
 
@@ -803,7 +812,7 @@ select {
   flex-wrap: wrap; }
   @media (max-width: 1200px) {
     .ba-trips {
-      margin-top: 60px; } }
+      margin-top: 40px; } }
 
 .ba-trip {
   position: relative;
@@ -1052,6 +1061,9 @@ select {
   z-index: 2;
   bottom: -20px;
   right: 50px; }
+  @media (max-width: 480px) {
+    .ba-button--kenya {
+      right: 20px; } }
 
 .ba-find-out {
   background: #c46d39 url("../img/find-bg.jpg") 50% no-repeat;
@@ -1060,13 +1072,16 @@ select {
   text-align: center; }
   @media (max-width: 768px) {
     .ba-find-out {
-      padding: 60px 0; } }
+      padding: 50px 0; } }
   .ba-find-out__title {
     font-size: 80px;
     font-weight: 800;
     line-height: 1;
     color: #fd5c08;
     margin: 0; }
+    @media (max-width: 768px) {
+      .ba-find-out__title {
+        font-size: 50px; } }
   .ba-find-out__subtitle {
     font-size: 34px;
     line-height: 1;
@@ -1076,6 +1091,9 @@ select {
   background: #ffbb78 url("../img/journey-bg.jpg") 50% no-repeat;
   background-size: cover;
   padding: 75px 0 148px; }
+  @media (max-width: 768px) {
+    .ba-last-minute {
+      padding: 50px 0; } }
 
 .ba-last-minute-box {
   background-color: #fd5c08;
@@ -1157,6 +1175,9 @@ select {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-left: 20px; }
+  @media (max-width: 768px) {
+    .ba-last-minute__nav {
+      padding-left: 0; } }
 
 .ba-last-minute__ind {
   text-decoration: none;
@@ -1164,12 +1185,13 @@ select {
   font-weight: 500;
   font-size: 14px;
   background-color: #fd5c08;
-  padding: 20px 34px; }
+  padding: 20px 34px;
+  line-height: 1; }
   .ba-last-minute__ind:hover {
     background-color: #3f3e41; }
   @media (max-width: 768px) {
     .ba-last-minute__ind {
-      padding: 20px 14px; } }
+      padding: 20px 10px; } }
 
 .ba-last-minute__right-side {
   text-align: right; }
@@ -1203,7 +1225,7 @@ select {
       .ba-footer__links {
         width: 100%;
         text-align: center;
-        padding-bottom: 0; } }
+        padding: 25px 0 0; } }
   .ba-footer__info {
     width: 50%;
     float: right;
@@ -1212,7 +1234,8 @@ select {
     @media (max-width: 768px) {
       .ba-footer__info {
         width: 100%;
-        text-align: center; } }
+        text-align: center;
+        padding: 25px 0; } }
 
 .ba-socials {
   margin: 0;

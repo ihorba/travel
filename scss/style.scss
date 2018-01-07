@@ -94,6 +94,17 @@ textarea {
 
 }
 
+.ba-container--header {
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 1200px;
+		@media (max-width: $bp-small) {
+			padding: 0;
+		}
+
+
+}
+
 .ba-logo-container {
 	padding-top: 23px;
 	width: 50%;
@@ -221,7 +232,7 @@ textarea {
 	padding: 120px 0 114px;
 
 	@media (max-width: $bp-xlarge) {
-		padding: 60px 0;
+		padding: 40px 0;
 	}
 
 	&__title {
@@ -239,6 +250,7 @@ textarea {
 	&__subtitle {
 		font-size: 34px;
 		margin: 0;
+		line-height: 1.2;
 	}
 
 	&__info {
@@ -263,7 +275,7 @@ textarea {
 .ba-trips {
 	margin: 102px 0 40px;
 	@media (max-width: $bp-xlarge) {
-		margin-top: 60px;
+		margin-top: 40px;
 	}
 	display: flex;
 	flex-wrap: wrap;
@@ -576,6 +588,10 @@ textarea {
 	bottom: -20px;
 	right: 50px;
 
+	@media (max-width: $bp-small) {
+		right: 20px;
+	}
+
 }
 
 
@@ -587,7 +603,7 @@ textarea {
 	text-align: center;
 
 	@media (max-width: $bp-medium) {
-		padding: 60px 0;
+		padding: 50px 0;
 	}
 
 	&__title {
@@ -596,6 +612,10 @@ textarea {
 		line-height: 1;
 		color: $secondary-color;
 		margin: 0;
+
+		@media (max-width: $bp-medium) {
+			font-size: 50px;
+		}
 	}
 
 	&__subtitle {
@@ -609,6 +629,10 @@ textarea {
 	background: #ffbb78 url('../img/journey-bg.jpg') 50% no-repeat;
 	background-size: cover;
 	padding: 75px 0 148px;
+
+	@media (max-width: $bp-medium) {
+		padding: 50px 0;
+	}
 
 }
 
@@ -711,6 +735,10 @@ textarea {
 	display: flex;
 	justify-content: space-between;
 	padding-left: 20px;
+
+	@media (max-width: $bp-medium) {
+		padding-left: 0;
+	}
 }
 
 .ba-last-minute__ind {
@@ -720,12 +748,13 @@ textarea {
 	font-size: 14px;
 	background-color: $secondary-color;
 	padding: 20px 34px;
+	line-height: 1;
 	&:hover {
 		background-color: $text-color;
 	}
 
 	@media (max-width: $bp-medium) {
-		padding: 20px 14px;
+		padding: 20px 10px;
 	}
 }
 
@@ -766,7 +795,7 @@ textarea {
 		@media (max-width: $bp-medium) {
 			width: 100%;
 			text-align: center;
-			padding-bottom: 0;
+			padding: 25px 0 0;
 		}
 	}
 
@@ -779,6 +808,8 @@ textarea {
 		@media (max-width: $bp-medium) {
 			width: 100%;
 			text-align: center;
+			padding: 25px 0;
+
 		}
 	}
 
