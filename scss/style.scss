@@ -95,12 +95,13 @@ textarea {
 }
 
 .ba-container--header {
-		padding-left: 15px;
-		padding-right: 15px;
-		max-width: 1200px;
-		@media (max-width: $bp-small) {
-			padding: 0;
-		}
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1200px;
+	margin: 0 auto;
+	@media (max-width: $bp-small) {
+		padding: 0;
+	}
 
 
 }
@@ -267,8 +268,8 @@ textarea {
 .ba-destinations__half {
 	width: 50%;
 	@media (max-width: $bp-xlarge) {
-	width: 100%;
-	text-align: center;
+		width: 100%;
+		text-align: center;
 	}
 }
 
